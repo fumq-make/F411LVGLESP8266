@@ -12,7 +12,7 @@ STM32F411CEU6（WeAct 黑药丸）+ ESP8266 + 1.69″ ST7789(CTP) 温湿度小�
 |------|------|
 | `PROJECT_SETUP.md` | 方案备忘：硬件清单、完整引脚表、软件组件、开发节奏、易错点 |
 | `01_RTOS/` | 早期实验：CubeMX + FreeRTOS 跑通 |
-| `02_AHT21/` | **当前主力工程**：CubeMX + FreeRTOS + `BSP/AHT21`、`BSP/ST7789`（引脚已对齐备忘） |
+| `project/` | **当前主力工程**：CubeMX + FreeRTOS + `BSP/AHT21`、`BSP/ST7789`（引脚已对齐备忘） |
 | `02_RTOSCSDNAHT21/` | 实验分支：RTOS + 软件 I²C + AHT21 |
 | `letter-shell-shell3.1/` | 调试 shell 中间件（上游 letter-shell 3.1，规划接入 USART1） |
 
