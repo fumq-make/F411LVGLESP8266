@@ -1,0 +1,86 @@
+# ============================================================
+# F411LVGLESP8266 — Git 忽略规则
+# 策略：只提交源码工程（Core / BSP / Drivers / Middlewares / 工程文件），
+#       资料、压缩包、编译产物一律不提交。
+# ============================================================
+
+# ---------- 1. 资料 / 参考工程（体积大，非本仓库源码） ----------
+# 如需纳入版本管理，删掉对应行即可。
+/ST7789/
+/WeActStudio.MiniSTM32F4x1-master/
+/AHT21_Working_Original_Hardware_Testing/
+/3526526985P169H002-CTP资料 (1)/
+
+# ---------- 2. 压缩包 / 大二进制分发件 ----------
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.pack
+
+# ---------- 3. Keil MDK-ARM 输出与用户文件 ----------
+# 工程输出目录（Objects / Listings / DebugConfig 等，可由 Keil 重新生成）
+**/MDK-ARM/*/
+# 例外：保留 RTE（RTE_Components.h 等，构建需要）
+!**/MDK-ARM/RTE/
+**/MDK-ARM/RTE/*.pack
+# 每个用户的界面布局（含窗口位置，不应共享）
+*.uvguix.*
+*.uvgui.*
+# 备份文件
+*.bak
+*.backup
+*~
+
+# ---------- 4. 编译产物 ----------
+*.o
+*.obj
+*.axf
+*.elf
+*.bin
+*.hex
+*.s19
+*.map
+*.crf
+*.d
+*.dep
+*.lnp
+*.iex
+*.lst
+*.htm
+*.build_log.*
+*.sct.bak
+Objects/
+Listings/
+Debug/
+Release/
+build/
+DebugConfig/
+
+# ---------- 5. 编辑器 / IDE / 系统 ----------
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+__pycache__/
+*.pyc
+
+# ---------- 6. 文档 / 媒体（资料类，不入库） ----------
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.gif
+*.wav
+*.mp4
+
+# ---------- 7. 日志 / 临时 ----------
+*.log
+*.tmp
+*.temp
