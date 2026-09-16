@@ -186,4 +186,4 @@ USB‑TTL：GND 共地；勿用 5V TTL 直灌；板子供电用自身 USB/5V，T
 
 > 按 `E:\Workspace\F411LVGLESP8266\PROJECT_SETUP.md` 继续，从 D× / 某某驱动开始。
 
-本目录现有 `project`（主力工程）与 `letter-shell-shell3.1`（调试中间件），新工程建议与备忘引脚表对齐，避免旧工程引脚冲突。
+本目录现有 `project`（主力工程）；调试中间件 letter-shell 3.1 与其余参考资料已移至同级 `F411LVGLESP8266资料\`。新工程建议与备忘引脚表对齐，避免旧工程引脚冲突。

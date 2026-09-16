@@ -12,12 +12,13 @@ STM32F411CEU6（WeAct 黑药丸）+ ESP8266 + 1.69″ ST7789(CTP) 温湿度小�
 |------|------|
 | `PROJECT_SETUP.md` | 方案备忘：硬件清单、完整引脚表、软件组件、开发节奏、易错点 |
 | `project/` | **主力工程**：CubeMX + FreeRTOS + `BSP/AHT21`、`BSP/ST7789`（引脚已对齐备忘） |
-| `letter-shell-shell3.1/` | 调试 shell 中间件（上游 letter-shell 3.1，规划接入 USART1） |
 
 ## 已排除在版本管理之外（见 `.gitignore`）
 
-以下为**参考资料 / 上游 SDK / 压缩包**，体积大且非本项目源码，未入库：
+以下为**参考资料 / 上游 SDK / 中间件 / 压缩包**，体积大或属第三方代码，未入库。
+它们已从仓库目录移至同级 `E:\Workspace\F411LVGLESP8266资料\`：
 
+- `letter-shell-shell3.1/`（上游 letter-shell 3.1 调试中间件，规划接入 USART1）
 - `ST7789/`（1.4 GB，含 3 份重复的 ST7789 参考例程）
 - `WeActStudio.MiniSTM32F4x1-master/`（上游 SDK，318 MB）
 - `AHT21_Working_Original_Hardware_Testing/`（AHT21 参考验证工程，163 MB）

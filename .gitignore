@@ -6,6 +6,8 @@
 
 # ---------- 1. 资料 / 参考工程（体积大，非本仓库源码） ----------
 # 如需纳入版本管理，删掉对应行即可。
+# 注：以下目录已移至同级 F411LVGLESP8266资料\，规则保留以防误加回仓库。
+/letter-shell-shell3.1/
 /ST7789/
 /WeActStudio.MiniSTM32F4x1-master/
 /AHT21_Working_Original_Hardware_Testing/
