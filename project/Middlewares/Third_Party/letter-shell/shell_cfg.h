@@ -12,9 +12,23 @@
 #ifndef __SHELL_CFG_H__
 #define __SHELL_CFG_H__
 
-#ifdef SHELL_CFG_USER
-#include SHELL_CFG_USER
-#endif
+/* ===========================================================================
+ * 本地补丁 —— F411LVGLESP8266 工程
+ *
+ * 上游原文是：
+ *     #ifdef SHELL_CFG_USER
+ *     #include SHELL_CFG_USER
+ *     #endif
+ * 需要靠编译选项定义 SHELL_CFG_USER="shell_cfg_user.h"。
+ *
+ * 但 Keil MDK 处理这个字符串宏不可靠（引号会被剥掉）：
+ *   填在 C/C++ → Define 框 或 Misc Controls 里，都会变成
+ *     #include shell_cfg_user.h   →   error: #13: expected a file name
+ *
+ * 故改为直接包含本工程的用户配置，不再依赖任何编译开关。
+ * 升级上游 letter-shell 后必须重新打此补丁。
+ * =========================================================================== */
+#include "shell_cfg_user.h"
 
 #ifndef SHELL_TASK_WHILE
 /**

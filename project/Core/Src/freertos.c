@@ -96,7 +96,7 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
-  userShellInit();        /* 初始化 USART1 + letter-shell，并建立 shellTask */
+  userShellInit();        /* init USART1 + letter-shell, create shellTask */
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
